@@ -106,6 +106,7 @@ header .links .icon{
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
+    cursor: pointer;
 }
 header .links .icon span{
     background-color:#333 ;
@@ -168,7 +169,8 @@ header .links ul li:not(:last-child) a {
 .landing{
     background-image: url("../images/mountain-nature-panorama-dolomites-alps-italy-69046581.jpg");
     background-size: cover ;
-    height: calc(100vh - 99px);
+    min-height: 250px;
+    height: calc(100vh - 54.5px);
     position: relative;
 }
 .landing .intro-text{
@@ -389,6 +391,7 @@ header .links ul li:not(:last-child) a {
 }
 .contact .contact-content {
     padding: var(--section-padding);
+    width: 100%;
 }
 .contact .contact-content .label{
     font-weight:800 ;
@@ -404,6 +407,8 @@ header .links ul li:not(:last-child) a {
     font-size: 30px;
     letter-spacing: -2px;
     margin:0 0 30px 30px ;
+    width: -moz-fit-content;
+    width: fit-content;
     text-decoration: none;
 }
 .contact .contact-content .social{
@@ -422,11 +427,10 @@ header .links ul li:not(:last-child) a {
         letter-spacing: -1px;
         text-align: center;
     }
-    .contact .contact-content .link{
+    .contact .contact-content a.link{
         font-size: 5vw;
         letter-spacing: -1px;
-        text-align: center;
-        margin-left: 0;
+        margin-inline: auto;
     }
     .contact .contact-content .social{
         margin-inline:0;
