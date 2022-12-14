@@ -415,7 +415,7 @@ header .links ul li:not(:last-child) a {
     margin:0 0 60px 60px ;
 }
 .contact .contact-content .social i{
-    margin-inline:10px;
+    margin-left:20px;
     color: var(--secondary-color);
 }
 @media (max-width :767px){
